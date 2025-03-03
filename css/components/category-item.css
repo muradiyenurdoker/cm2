@@ -1,0 +1,43 @@
+.categories .category-item {
+  background-color: #00000016;
+  border-radius: 4px;
+  flex: 8;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.categories .category-item a {
+  display: inline-block;
+  padding: 10px;
+  text-align: center;
+  margin: 5px 0;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+h2,
+p {
+  scroll-margin-top: 150px;
+}
+.categories .section-title h1 {
+  scroll-margin-top: 150px;
+}
+
+h2::before {
+  content: "";
+  display: block;
+  height: 100px; /* Header yüksekliği kadar boşluk */
+  margin-top: -100px;
+  visibility: hidden;
+}
+
+.categories .category-item .category-image {
+  width: 100%;
+  transition: transform ease 0.2s;
+}
+
+.categories .category-item:hover {
+  transform: scale(1.1);
+  transition: transform ease 0.2s;
+}
